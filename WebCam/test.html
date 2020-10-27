@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+
+                <div class="booth">
+                    <video id="video" width="200" height="150"></video>
+                    <a href="#" id="capture" class="booth-capture-button">Picture Capture</a><br>
+                    <div class="timer2"></div>
+                    <canvas id="canvas" width="200" height="150"></canvas><br><br>
+                    <div id="timer"></div>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+
+
+                <p>
+                    <h4>Question 1</h4>
+                    According to Porter’s Five Forces Model, ____ is low when customers have more options.
+                    <br>
+                    <select name="Question_1" id="Question_1">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. supplier power</option>
+            <option value="B">b. buyer power</option>
+            <option value="C">c. competitor power</option>
+            <option value="D">d. new entrant power</option>
+          </select>
+                    <br><br>
+
+                    <h4>Question 2</h4>
+                    _____ monitor and record the keys pressed on a keyboard and can be software or hardware devices.
+                    <br>
+                    <select name="Question_2" id="Question_2">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Key chain planners</option>
+            <option value="B">b. Key performers</option>
+            <option value="C">c. Key punchers</option>
+            <option value="D">d. Keystroke loggers</option>
+          </select>
+                    <br><br>
+                    <h4>Question 3</h4>
+                    The _____ stores data types for fields, default values for fields, and validation rules for data in each field.
+                    <br>
+                    <select name="Question_3" id="Question_3">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. data mart</option>
+            <option value="B">b. data dictionary</option>
+            <option value="C">c. data mine</option>
+            <option value="D">d. data warehouse</option>
+          </select>
+                    <br><br>
+                    <h4>Question 4</h4>
+                    In comparison with a flat file system, _____ in a database.
+                    <br>
+                    <select name="Question_4" id="Question_4">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. programs and data are interdependent</option>
+            <option value="B">b. data redundancy is introduced</option>
+            <option value="C">c. storage space is reduced</option>
+            <option value="D">d. complex requests cannot be handled easily</option>
+          </select>
+                    <br><br>
+                    <h4>Question 5</h4>
+                    Computer designers have concentrated on technology using gallium arsenide instead of silicon because silicon:
+                    <br>
+                    <select name="Question_5" id="Question_5">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. is soft and fragile.</option>
+            <option value="B">b. cannot be used for the mass production of electronic devices.</option>
+            <option value="C">c. cannot emit light and has speed limitations. </option>
+            <option value="D">d. is expensive.</option>
+          </select>
+                    <br><br>
+                    <h4>Question 6</h4>
+                    Which of the following statements is true of the data component of an information system?
+                    <br>
+                    <select name="Question_6" id="Question_6">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Disaggregated data reports overall performance during a particular sales quarter</option>
+            <option value="B">b. Current data is collected for performance reports.</option>
+            <option value="C">c. Aggregated data enables decision makers to focus on specific factors.</option>
+            <option value="D">d. Future data is predicted for budgets or cash flow reports. </option>
+          </select>
+                    <br><br>
+                    <h4>Question 7</h4>
+                    Jacob, a data analyst, is working on a project from home and needs to download some data from his office network.<br> Which of the following server platforms will best serve Jacob’s purpose?
+                    <br>
+                    <select name="Question_7" id="Question_7">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Application servers</option>
+            <option value="B">b. Disk servers</option>
+            <option value="C">c. Web servers</option>
+            <option value="D">d. Remote access servers</option>
+          </select>
+                    <br><br>
+                    <h4>Question 8</h4>
+                    The word computer consists of 64 bits, which is equivalent to _____ bytes.
+                    <br>
+                    <select name="Question_8" id="Question_8">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. 6</option>
+            <option value="B">b. 8 </option>
+            <option value="C">c. 32</option>
+            <option value="D">d. 16</option>
+          </select>
+                    <br><br>
+                    <h4>Question 9</h4>
+                    Truzan Creations, one of the leading names in the handicraft industry, recently launched a new artifact in the market. The company uses a database to store information on the number of products manufactured, the weekly sales, the list of suppliers, and
+                    the profits achieved. The process component of the information system is used to conduct analysis on the data to generate information about sales. Which can be used by Truzan Creations to generate predictions for its next sales period?
+                    <br>
+                    <select name="Question_9" id="Question_9">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Modeling charts</option>
+            <option value="B">b. Forecasting models</option>
+            <option value="C">c. Estimation graphs</option>
+            <option value="D">d. Theoretical hypotheses</option>
+          </select>
+                    <br><br>
+                    <h4>Question 10</h4>
+                    Which are not allowed in domain names?
+                    <br>
+                    <select name="Question_10" id="Question_10">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Combinations of letters</option>
+            <option value="B">b. Numerals</option>
+            <option value="C">c. Hyphens</option>
+            <option value="D">d. Spaces</option>
+          </select>
+                    <br><br>
+                    <h4>Question 11</h4>
+                    The embedded references in hypermedia documents are called _____.
+                    <br>
+                    <select name="Question_11" id="Question_11">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. hypertext </option>
+            <option value="B">b. weblogs</option>
+            <option value="C">c. podcast</option>
+            <option value="D">d. wikis</option>
+          </select>
+                    <br><br>
+                    <h4>Question 12</h4>
+                    Initially, offshore outsourcing was used mostly in manufacturing to find _____.
+                    <br>
+                    <select name="Question_12" id="Question_12">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. manufacturing engineers</option>
+            <option value="B">b. cheap labor</option>
+            <option value="C">c. quality tester</option>
+            <option value="D">d. help desk support</option>
+          </select>
+                    <br><br>
+                    <h4>Question 13</h4>
+                    Microsoft Internet Explorer (IE), Mozilla Firefox, Google Chrome, Apple Safari,<br> and Opera are examples of _____.
+                    <br>
+                    <select name="Question_13" id="Question_13">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. search engines</option>
+            <option value="B">b. Web browsers</option>
+            <option value="C">c. uniform resource locators</option>
+            <option value="D">d. operating systems</option>
+          </select>
+                    <br><br>
+                    <h4>Question 14</h4>
+                    The _____ refers to the physical objects that are connected to the<br> Internet and, therefore, to all the other physical objects.
+                    <br>
+                    <select name="Question_14" id="Question_14">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Internet Control Message Protocol</option>
+            <option value="B">b. Internet of Things</option>
+            <option value="C">c. Transmission Control Protocol</option>
+            <option value="D">d. Internet Archive</option>
+          </select>
+                    <br><br>
+                    <h4>Question 15</h4>
+                    Companies exclusively using business-to-consumer (B2C) applications:
+                    <br>
+                    <select name="Question_15" id="Question_15">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. approach customers through third-party agents.</option>
+            <option value="B">b. focus on using personalized physical stores to serve consumers.</option>
+            <option value="C">c. sell directly to consumers.</option>
+            <option value="D">d. rely on physical storefronts for customer interactions.</option>
+          </select>
+                    <br><br>
+                    <h4>Question 16</h4>
+                    Which statement is true of Extensible Markup Language (XML)?
+                    <br>
+                    <select name="Question_16" id="Question_16">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. XML tags represent the kind of content being posted and transmitted. </option>
+            <option value="B">b. XML is inflexible toward interoperability between different systems.</option>
+            <option value="C">c. XML defines data without context.</option>
+            <option value="D">d. XML tags specify the layout and appearance of content.</option>
+          </select>
+                    <br><br>
+                    <h4>Question 17</h4>
+                    Which is a similarity between the Internet and an intranet?
+                    <br>
+                    <select name="Question_17" id="Question_17">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Both are private networks.</option>
+            <option value="B">b. Both use similar languages for developing applications.</option>
+            <option value="C">c. Neither can be used by users without approval.</option>
+            <option value="D">d. Both are public networks.</option>
+          </select>
+                    <br><br>
+                    <h4>Question 18</h4>
+                    Which statement is true of a global information system (GIS)?
+                    <br>
+                    <select name="Question_18" id="Question_18">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. It incorporates technologies that are specific to a particular country.</option>
+            <option value="B">b. It enables a company’s subsidiaries to function with complete autonomy</option>
+            <option value="C">c. It facilitates communication between headquarters and subsidiaries in other countries. </option>
+            <option value="D">d. It differs from a typical information system as it excludes operations management.</option>
+          </select>
+                    <br><br>
+                    <h4>Question 19</h4>
+                    James gets a job at a multinational corporation. On his first day at work,<br> he finds out that the numerical code assigned by the Internet Corporation for<br> Assigned Names and Numbers (ICANN) to his computer system is 115.248.178.233.
+                    This
+                    <br> numerical code is referred to as a(n) _____.
+                    <br>
+                    <select name="Question_19" id="Question_19">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. data link connection identifier</option>
+            <option value="B">b. Internet Protocol address </option>
+            <option value="C">c. Ethernet address</option>
+            <option value="D">d. virtual path identifier</option>
+          </select>
+                    <br><br>
+                    <h4>Question 20</h4>
+                    Symbic Foods, a chain of fast food restaurants, has included a drop-down menu on its main Web<br> site. With this drop-down menu, people can view their country-specific Web site, which contains<br> information about the dishes that
+                    Symbic Foods serves in that country. In this case, what is<br> the strategy adopted by Symbic Foods called?
+                    <br>
+                    <select name="Question_20" id="Question_20">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. standardization</option>
+            <option value="B">b. localization</option>
+            <option value="C">c. generalization</option>
+            <option value="D">d. centralization</option>
+          </select>
+                    <br><br>
+                    <h4>Question 21</h4>
+                    Which feature of a customer relationship management (CRM) application assists with tasks such as<br> controlling inventory and processing orders?
+                    <br>
+                    <select name="Question_21" id="Question_21">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Survey management</option>
+            <option value="B">b. Web-based CRM</option>
+            <option value="C">c. Salesforce automation </option>
+            <option value="D">d. Automated customer service</option>
+          </select>
+                    <br><br>
+                    <h4>Question 22</h4>
+                    In the context of e-marketplaces, a _____ market concentrates on coordinating a business process or<br> function involving multiple vendors.
+                    <br>
+                    <select name="Question_22" id="Question_22">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. horizontal </option>
+            <option value="B">b. labor</option>
+            <option value="C">c. diagonal</option>
+            <option value="D">d. hierarchical</option>
+          </select>
+                    <br><br>
+                    <h4>Question 23</h4>
+                    According to Peter G. Keen, a former MIT professor, which is a benefit of a decision support system (DSS)?
+                    <br>
+                    <select name="Question_23" id="Question_23">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Easy assessment of costs and benefits</option>
+            <option value="B">b. Ability to cause improvements</option>
+            <option value="C">c. Focus on efficiency rather than effectiveness</option>
+            <option value="D">d. Fast response to unexpected situations</option>
+          </select>
+                    <br><br>
+                    <h4>Question 24</h4>
+                    _____ are used with neural networks and fuzzy logic systems to solve scheduling, engineering design, and marketing problems.
+                    <br>
+                    <select name="Question_24" id="Question_24">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Genetic algorithms</option>
+            <option value="B">b. Quick response codes</option>
+            <option value="C">c. Feasibility prototypes</option>
+            <option value="D">d. Biometric systems</option>
+          </select>
+                    <br><br>
+                    <h4>Question 25</h4>
+                    _____ is a feature of electronic meeting systems that combines the advantages of video<br> teleconferencing and real-time computer conferencing.
+                    <br>
+                    <select name="Question_25" id="Question_25">
+            <option value="defautl" disabled selected>Please select an answer! </option>
+            <option value="A">a. Virtual teleconferencing</option>
+            <option value="B">b. Mobile teleconferencing</option>
+            <option value="C">c. Voice conferencing</option>
+            <option value="D">d. Desktop conferencing</option>
+          </select>
+                    <br><br>
+
+                </p>
+            </div>
+
+
+
+
+
+
+
+
+            <script src="script.js"></script>
+
+        </div>
+    </div>
+</body>
+
+</html>
