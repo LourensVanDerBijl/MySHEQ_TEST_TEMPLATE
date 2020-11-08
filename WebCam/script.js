@@ -1,3 +1,19 @@
+//Checking if the user have a web cam and agree that this application can use it
+navigator.getMedia = (navigator.getUserMedia || // use the proper vendor prefix
+    navigator.webkitGetUserMedia ||
+    navigator.mozGetUserMedia ||
+    navigator.msGetUserMedia);
+
+navigator.getMedia({ video: true }, function() {
+    document.getElementById("mesg").innerHTML = "web cam is availible";
+}, function() {
+    alert("Please allow or enable a web cam in order to proceed with this test");
+    location.href = "https://www.mysheq.com/"; //user does not have web-cam enabled redirect him to mySheq.com and cancel test
+});
+
+
+
+
 (function() {
 
     var video = document.getElementById('video'), //where the video will be streaming
@@ -37,7 +53,7 @@ function test() {
 
 //starting the test timer it is 5min and 5 sec for testing perposes
 document.getElementById('timer').innerHTML =
-    05 + ":" + 05;
+    01 + ":" + 05;
 startTimer();
 
 function startTimer() {
