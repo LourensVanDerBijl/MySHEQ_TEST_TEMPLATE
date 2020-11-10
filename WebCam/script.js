@@ -3,6 +3,8 @@ function Timer() {
     document.getElementById("mesg").innerHTML = xTime;
 }
 
+// set interfal
+
 
 //Checking if the user have a web cam and agree that this application can use it
 navigator.getMedia = (navigator.getUserMedia || // use the proper vendor prefix
@@ -11,44 +13,50 @@ navigator.getMedia = (navigator.getUserMedia || // use the proper vendor prefix
     navigator.msGetUserMedia);
 
 navigator.getMedia({ video: true }, function() {
-    var video = document.getElementById('video'), //where the video will be streaming
-        canvas = document.getElementById('canvas'), //where the capture picture will be shown ,saved temp
-        context = canvas.getContext('2d'), //drawing a 2 dementional picture
-        vendorURL = window.URL || window.webkitURL; //specifying diff browsers
+        var video = document.getElementById('video'), //where the video will be streaming
+            canvas = document.getElementById('canvas'), //where the capture picture will be shown ,saved temp
+            context = canvas.getContext('2d'), //drawing a 2 dementional picture
+            vendorURL = window.URL || window.webkitURL; //specifying diff browsers
 
-    navigator.getMedia = navigator.getUserMedia || //connecting to the cam on all types of browsers
-        navigator.webkitGetUserMedia || //connecting to the cam on all types of browsers
-        navigator.mozGetUserMedia || //connecting to the cam on all types of browsers
-        navigator.msGetUserMedia; //connecting to the cam on all types of browsers
-
-
-    navigator.getMedia({ //getting the stream to be display
-        video: true, //streaming video true
-        audio: false //streaming audio false
-    }, function(stream) {
-        video.srcObject = stream; // the stream object
-        video.play(); //playing the stream automatically
-    }, function(error) { // if an error would occured it will be saved here
-        // an error occured
-        // error.code
+        navigator.getMedia = navigator.getUserMedia || //connecting to the cam on all types of browsers
+            navigator.webkitGetUserMedia || //connecting to the cam on all types of browsers
+            navigator.mozGetUserMedia || //connecting to the cam on all types of browsers
+            navigator.msGetUserMedia; //connecting to the cam on all types of browsers
 
 
+        navigator.getMedia({ //getting the stream to be display
+            video: true, //streaming video true
+            audio: false //streaming audio false
+        }, function(stream) {
+            video.srcObject = stream; // the stream object
+            video.play(); //playing the stream automatically
+        }, function(error) { // if an error would occured it will be saved here
+            // an error occured
+            // error.code
+
+
+        });
+
+        var myVar = setInterval(myTimer, 10000);
+
+        function myTimer() {
+
+
+            context.drawImage(video, 0, 0, 200, 150);
+
+            /* document.getElementById('capture').addEventListener('click', function() { //the event listener that will capture the picture need to be change with a timer
+                context.drawImage(video, 0, 0, 200, 150); //drawing the picture */
+        };
+
+
+
+
+
+    },
+    function() {
+        alert("Please allow or enable a web cam in order to proceed with this test");
+        location.href = "https://www.mysheq.com/"; //user does not have web-cam enabled redirect him to mySheq.com and cancel test
     });
-
-
-
-    document.getElementById('capture').addEventListener('click', function() { //the event listener that will capture the picture need to be change with a timer
-        context.drawImage(video, 0, 0, 200, 150); //drawing the picture
-    });
-
-
-
-
-
-}, function() {
-    alert("Please allow or enable a web cam in order to proceed with this test");
-    location.href = "https://www.mysheq.com/"; //user does not have web-cam enabled redirect him to mySheq.com and cancel test
-});
 
 
 
